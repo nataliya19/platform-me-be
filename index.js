@@ -5,11 +5,11 @@ const { ApolloServer, gql } = require('apollo-server');
 // your data.
 const typeDefs = gql`
   type Course {
-    title: String
-    author: String  
-    rating: Float
-    publicationDate: String
-    imgUrl: String
+    title: String!
+    author: String!  
+    rating: Float!
+    publicationDate: String!
+    imgUrl: String!
   }
 
   type Query {
